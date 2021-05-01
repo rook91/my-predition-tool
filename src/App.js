@@ -2,8 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import sportsmonksPolandFixtures from './data/sportmonks/scottish2020-2021Fixtures.json'
 
 function App() {
+  console.log(sportsmonksPolandFixtures);
   return (
     <div className="App">
       <header className="App-header">

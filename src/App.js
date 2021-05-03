@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import sportsmonksPolandFixtures from './data/sportmonks/scottish2020-2021Fixtures.json'
+import { fetchFixturesDateRange } from './AppFunctions'
 
 const getRow = (index) => {
   return(
@@ -15,7 +15,7 @@ const getRow = (index) => {
 }
 
 function App() {
-  
+  // fetchFixturesDateRange();
   return (
     <div className="App">
       {sportsmonksPolandFixtures.data.map((item, index) => getRow(index))}
